@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — DECOTA</title>
+  <meta name="description" content="Каталог магазина DECOTA: 44 модели — свитеры, кардиганы, платья, юбки и топы.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">DECOTA</a>
+      <nav class="site-nav">
+        <ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Как заказать</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__current">Каталог</span>
+    </nav>
+    <h1 class="section__title">Каталог</h1>
+    <div class="catalog-layout">
+      <aside class="catalog-filters">
+        <h2 class="catalog-filters__title">Фильтры</h2>
+        <fieldset class="catalog-filters__group">
+          <legend class="catalog-filters__legend">Категория</legend>
+          <label class="catalog-filters__option"><input type="radio" name="cat" value="all" checked> Все категории</label>
+          <label class="catalog-filters__option"><input type="radio" name="cat" value="Свитеры"> Свитеры (6)</label><label class="catalog-filters__option"><input type="radio" name="cat" value="Кардиганы"> Кардиганы (10)</label><label class="catalog-filters__option"><input type="radio" name="cat" value="Платья"> Платья (6)</label><label class="catalog-filters__option"><input type="radio" name="cat" value="Юбки"> Юбки (10)</label><label class="catalog-filters__option"><input type="radio" name="cat" value="Топы"> Топы (12)</label>
+        </fieldset>
+        <fieldset class="catalog-filters__group">
+          <legend class="catalog-filters__legend">Ещё</legend>
+          <label class="catalog-filters__option"><input type="checkbox" id="only-sale"> Только со скидкой</label>
+        </fieldset>
+        <label class="catalog-filters__sort" for="sort">
+          Сортировка
+          <select class="order-form__select" id="sort">
+            <option value="default">по умолчанию</option>
+            <option value="asc">сначала дешевле</option>
+            <option value="desc">сначала дороже</option>
+          </select>
+        </label>
+        <button class="btn btn--ghost catalog-filters__reset" type="button" id="filters-reset">Сбросить фильтры</button>
+      </aside>
+      <section class="catalog-products" aria-label="Список товаров">
+        <div class="products-grid catalog-grid" id="catalog-grid"><article class="product-card" data-cat="Свитеры" data-price="5167.92" data-disc="1">
+  
+  <img src="images/1287441187-516.webp" alt="Свитер с воротником-стойкой" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Свитеры</span>
+    <h3 class="product-card__title">Свитер с воротником-стойкой</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">5 168 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Свитер с воротником-стойкой (арт. 1287441187)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Свитеры" data-price="4320.72" data-disc="1">
+  
+  <img src="images/1287429101-516.webp" alt="Свитер вязаный на одно плечо оверсайз, бордовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Свитеры</span>
+    <h3 class="product-card__title">Свитер вязаный на одно плечо оверсайз, бордовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 321 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Свитер вязаный на одно плечо оверсайз, бордовый (арт. 1287429101)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Свитеры" data-price="4405.44" data-disc="1">
+  
+  <img src="images/1287429100-516.webp" alt="Свитер вязаный на одно плечо оверсайз, чёрный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Свитеры</span>
+    <h3 class="product-card__title">Свитер вязаный на одно плечо оверсайз, чёрный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 405 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Свитер вязаный на одно плечо оверсайз, чёрный (арт. 1287429100)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Свитеры" data-price="4405.44" data-disc="1">
+  
+  <img src="images/1287429099-516.webp" alt="Свитер вязаный на одно плечо оверсайз, меланж" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Свитеры</span>
+    <h3 class="product-card__title">Свитер вязаный на одно плечо оверсайз, меланж</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 405 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Свитер вязаный на одно плечо оверсайз, меланж (арт. 1287429099)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Свитеры" data-price="3049.92" data-disc="1">
+  
+  <img src="images/1287429098-516.webp" alt="Свитер вязаный на одно плечо оверсайз, хаки" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Свитеры</span>
+    <h3 class="product-card__title">Свитер вязаный на одно плечо оверсайз, хаки</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 050 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Свитер вязаный на одно плечо оверсайз, хаки (арт. 1287429098)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Свитеры" data-price="3049.92" data-disc="1">
+  
+  <img src="images/1287420220-516.webp" alt="Свитер вязаный на одно плечо оверсайз, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Свитеры</span>
+    <h3 class="product-card__title">Свитер вязаный на одно плечо оверсайз, молочный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 050 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Свитер вязаный на одно плечо оверсайз, молочный (арт. 1287420220)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="4659.6" data-disc="1">
+  
+  <img src="images/1579501325-516.webp" alt="Кардиган пушистый на пуговицах, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган пушистый на пуговицах, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 660 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган пушистый на пуговицах, шоколадный (арт. 1579501325)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="4659.6" data-disc="1">
+  
+  <img src="images/1579501326-516.webp" alt="Кардиган пушистый на пуговицах, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган пушистый на пуговицах, молочный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 660 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган пушистый на пуговицах, молочный (арт. 1579501326)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="4299.3" data-disc="1">
+  
+  <img src="images/1995212557-516.webp" alt="Кардиган в полоску на пуговицах, синий" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган в полоску на пуговицах, синий</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 299 ₽</span>
+      <s class="product-card__old-price">8 430 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган в полоску на пуговицах, синий (арт. 1995212557)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="5167.92" data-disc="1">
+  
+  <img src="images/1293928861-516.webp" alt="Кардиган вязаный укороченный с косами, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган вязаный укороченный с косами, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">5 168 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган вязаный укороченный с косами, шоколадный (арт. 1293928861)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="3624.9" data-disc="1">
+  
+  <img src="images/1298053918-516.webp" alt="Кардиган в полоску на пуговицах, розовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган в полоску на пуговицах, розовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 625 ₽</span>
+      <s class="product-card__old-price">8 430 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган в полоску на пуговицах, розовый (арт. 1298053918)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="4151.28" data-disc="1">
+  
+  <img src="images/1293928859-516.webp" alt="Кардиган вязаный укороченный с косами, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган вязаный укороченный с косами, молочный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 151 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган вязаный укороченный с косами, молочный (арт. 1293928859)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="3727.68" data-disc="1">
+  
+  <img src="images/2003727422-516.webp" alt="Кардиган укороченный на пуговицах, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган укороченный на пуговицах, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 728 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган укороченный на пуговицах, шоколадный (арт. 2003727422)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="3727.68" data-disc="1">
+  
+  <img src="images/1298053920-516.webp" alt="Кардиган укороченный на пуговицах, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган укороченный на пуговицах, молочный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 728 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган укороченный на пуговицах, молочный (арт. 1298053920)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="4320.72" data-disc="1">
+  
+  <img src="images/1298053919-516.webp" alt="Кардиган в полоску на пуговицах, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган в полоску на пуговицах, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 321 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган в полоску на пуговицах, шоколадный (арт. 1298053919)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Кардиганы" data-price="5167.92" data-disc="1">
+  
+  <img src="images/1293928860-516.webp" alt="Кардиган вязаный укороченный с косами, бордовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Кардиганы</span>
+    <h3 class="product-card__title">Кардиган вязаный укороченный с косами, бордовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">5 168 ₽</span>
+      <s class="product-card__old-price">8 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Кардиган вязаный укороченный с косами, бордовый (арт. 1293928860)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Платья" data-price="3883.2" data-disc="1">
+  
+  <img src="images/961773333-516.webp" alt="Платье мини с открытой спиной, чёрный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Платья</span>
+    <h3 class="product-card__title">Платье мини с открытой спиной, чёрный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 883 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Платье мини с открытой спиной, чёрный (арт. 961773333)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Платья" data-price="3753.76" data-disc="1">
+  
+  <img src="images/946409102-516.webp" alt="Платье вечернее мини с вырезом на груди, бордовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Платья</span>
+    <h3 class="product-card__title">Платье вечернее мини с вырезом на груди, бордовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 754 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Платье вечернее мини с вырезом на груди, бордовый (арт. 946409102)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Платья" data-price="4789.28" data-disc="1">
+  
+  <img src="images/861485086-516.webp" alt="Платье мини летнее с открытой спиной" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Платья</span>
+    <h3 class="product-card__title">Платье мини летнее с открытой спиной</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 789 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Платье мини летнее с открытой спиной (арт. 861485086)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Платья" data-price="3365.44" data-disc="1">
+  
+  <img src="images/861485085-516.webp" alt="Летнее платье сарафан ажурное" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Платья</span>
+    <h3 class="product-card__title">Летнее платье сарафан ажурное</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 365 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Летнее платье сарафан ажурное (арт. 861485085)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Платья" data-price="4206.8" data-disc="1">
+  
+  <img src="images/891011582-516.webp" alt="Платье мини с открытой спиной, сливочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Платья</span>
+    <h3 class="product-card__title">Платье мини с открытой спиной, сливочный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 207 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Платье мини с открытой спиной, сливочный (арт. 891011582)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Платья" data-price="5307.04" data-disc="1">
+  
+  <img src="images/891011583-516.webp" alt="Платье вечернее мини с вырезом на груди" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Платья</span>
+    <h3 class="product-card__title">Платье вечернее мини с вырезом на груди</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">5 307 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Платье вечернее мини с вырезом на груди (арт. 891011583)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="2977.12" data-disc="1">
+  
+  <img src="images/964490306-516.webp" alt="Юбка шорты с воланами мини, джинсовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка шорты с воланами мини, джинсовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 977 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка шорты с воланами мини, джинсовый (арт. 964490306)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="2977.12" data-disc="1">
+  
+  <img src="images/961801057-516.webp" alt="Юбка шорты с воланами мини, чёрный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка шорты с воланами мини, чёрный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 977 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка шорты с воланами мини, чёрный (арт. 961801057)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="2912.4" data-disc="1">
+  
+  <img src="images/961801056-516.webp" alt="Юбка шорты с воланами мини, белый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка шорты с воланами мини, белый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 912 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка шорты с воланами мини, белый (арт. 961801056)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="4012.64" data-disc="1">
+  
+  <img src="images/935676062-516.webp" alt="Юбка летняя миди в цветочек" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка летняя миди в цветочек</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">4 013 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка летняя миди в цветочек (арт. 935676062)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="3365.44" data-disc="1">
+  
+  <img src="images/964497659-516.webp" alt="Юбка атласная с кружевом миди" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка атласная с кружевом миди</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 365 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка атласная с кружевом миди (арт. 964497659)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="3365.44" data-disc="1">
+  
+  <img src="images/1044902204-516.webp" alt="Юбка джинсовая мини с кружевом, джинсовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка джинсовая мини с кружевом, джинсовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 365 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка джинсовая мини с кружевом, джинсовый (арт. 1044902204)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="3818.48" data-disc="1">
+  
+  <img src="images/1464302628-516.webp" alt="Юбка плиссе миди вязаная" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка плиссе миди вязаная</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 818 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка плиссе миди вязаная (арт. 1464302628)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="3753.76" data-disc="1">
+  
+  <img src="images/1293836094-516.webp" alt="Юбка вязаная макси" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка вязаная макси</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 754 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка вязаная макси (арт. 1293836094)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="6472" data-disc="0">
+  
+  <img src="images/1298111499-516.webp" alt="Юбка кожаная карандаш миди" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка кожаная карандаш миди</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">6 472 ₽</span>
+      
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка кожаная карандаш миди (арт. 1298111499)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Юбки" data-price="6472" data-disc="0">
+  
+  <img src="images/1307601387-516.webp" alt="Юбка мини" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Юбки</span>
+    <h3 class="product-card__title">Юбка мини</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">6 472 ₽</span>
+      
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Юбка мини (арт. 1307601387)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="3624.32" data-disc="1">
+  
+  <img src="images/861537235-516.webp" alt="Топ с открытой спиной с баской, в горошек" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ с открытой спиной с баской, в горошек</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 624 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ с открытой спиной с баской, в горошек (арт. 861537235)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="3689.04" data-disc="1">
+  
+  <img src="images/857066317-516.webp" alt="Топ вечерний кружевной с вырезом на груди" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний кружевной с вырезом на груди</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 689 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний кружевной с вырезом на груди (арт. 857066317)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2718.24" data-disc="1">
+  
+  <img src="images/857005959-516.webp" alt="Топ вечерний с открытой спиной, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с открытой спиной, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 718 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с открытой спиной, шоколадный (арт. 857005959)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2847.68" data-disc="1">
+  
+  <img src="images/856993790-516.webp" alt="Топ вечерний с горлом без рукавов, бордовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с горлом без рукавов, бордовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 848 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с горлом без рукавов, бордовый (арт. 856993790)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2847.68" data-disc="1">
+  
+  <img src="images/853409592-516.webp" alt="Топ халтер вечерний с открытой спиной, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ халтер вечерний с открытой спиной, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 848 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ халтер вечерний с открытой спиной, шоколадный (арт. 853409592)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2782.96" data-disc="1">
+  
+  <img src="images/853112875-516.webp" alt="Топ вечерний с горлом без рукавов, чёрный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с горлом без рукавов, чёрный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 783 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с горлом без рукавов, чёрный (арт. 853112875)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2912.4" data-disc="1">
+  
+  <img src="images/935622436-516.webp" alt="Топ вечерний с горлом без рукавов, бордовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с горлом без рукавов, бордовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 912 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с горлом без рукавов, бордовый (арт. 935622436)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2394.64" data-disc="1">
+  
+  <img src="images/853112874-516.webp" alt="Топ вечерний с горлом без рукавов" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с горлом без рукавов</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 395 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с горлом без рукавов (арт. 853112874)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2847.68" data-disc="1">
+  
+  <img src="images/964509357-516.webp" alt="Топ вечерний с горлом без рукавов, шоколадный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с горлом без рукавов, шоколадный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 848 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с горлом без рукавов, шоколадный (арт. 964509357)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="2847.68" data-disc="1">
+  
+  <img src="images/961759837-516.webp" alt="Топ вечерний с открытой спиной, чёрный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ вечерний с открытой спиной, чёрный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">2 848 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ вечерний с открытой спиной, чёрный (арт. 961759837)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="3689.04" data-disc="1">
+  
+  <img src="images/863852573-516.webp" alt="Топ корсет джинсовый, джинсовый" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ корсет джинсовый, джинсовый</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 689 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ корсет джинсовый, джинсовый (арт. 863852573)">Заказать</button>
+  </div>
+</article><article class="product-card" data-cat="Топы" data-price="3818.48" data-disc="1">
+  
+  <img src="images/1023311674-516.webp" alt="Топ бандо вечерний корсет на пуговицах, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <div class="product-card__body">
+    <span class="product-card__category">Топы</span>
+    <h3 class="product-card__title">Топ бандо вечерний корсет на пуговицах, молочный</h3>
+    <p class="product-card__prices">
+      <span class="product-card__price">3 818 ₽</span>
+      <s class="product-card__old-price">6 472 ₽</s>
+    </p>
+    <button type="button" class="btn btn--ghost product-card__button js-order" data-product="Топ бандо вечерний корсет на пуговицах, молочный (арт. 1023311674)">Заказать</button>
+  </div>
+</article></div>
+        <p class="catalog-empty" id="catalog-empty" hidden>Под выбранные фильтры ничего не подошло — попробуйте сбросить их.</p>
+      </section>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__logo">DECOTA</p>
+      <p class="site-footer__note">Магазин женской одежды: свитеры, кардиганы, платья, юбки и топы.<br>
+      Тел.: +7 (900) 000-00-00 · info@decota-shop.ru</p>
+      <p class="site-footer__copy">© 2026 DECOTA · учебный проект по дисциплине «Фронтенд и бэкенд разработка»</p>
+    </div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Наверх">↑</button>
+  <dialog class="order-dialog" id="order-dialog">
+    <div class="order-dialog__inner">
+      <h2 class="order-dialog__title">Быстрый заказ</h2>
+      <p class="order-dialog__product" id="order-dialog-product"></p>
+      <form class="order-dialog__form" id="order-dialog-form">
+        <div class="order-form__group">
+          <label class="order-form__label" for="dialog-name">Имя</label>
+          <input class="order-form__input" id="dialog-name" name="name" type="text" required>
+        </div>
+        <div class="order-form__group">
+          <label class="order-form__label" for="dialog-phone">Телефон</label>
+          <input class="order-form__input" id="dialog-phone" name="phone" type="tel" required>
+        </div>
+        <button class="btn order-dialog__submit" type="submit">Отправить заявку</button>
+        <p class="order-dialog__message" id="order-dialog-message" hidden>Спасибо! Мы перезвоним вам в течение дня.</p>
+      </form>
+      <button class="order-dialog__close" type="button" id="order-dialog-close" aria-label="Закрыть">✕</button>
+    </div>
+  </dialog>
+  <script src="js/main.js"></script>
+</body>
+</html>

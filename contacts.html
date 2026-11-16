@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — DECOTA</title>
+  <meta name="description" content="Свяжитесь с магазином DECOTA: телефон, почта и ответы на частые вопросы.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">DECOTA</a>
+      <nav class="site-nav">
+        <ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Как заказать</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html">Контакты</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+<section class="section">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__current">Контакты</span>
+    </nav>
+    <h1 class="section__title">Контакты</h1>
+    <div class="contacts-grid">
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <h2 class="contacts-item__title">Телефон</h2>
+          <p class="contacts-item__text">+7 (900) 000-00-00 · ежедневно с 10 до 20</p>
+        </li>
+        <li class="contacts-item">
+          <h2 class="contacts-item__title">Почта</h2>
+          <p class="contacts-item__text">info@decota-shop.ru · ответим в течение дня</p>
+        </li>
+        <li class="contacts-item">
+          <h2 class="contacts-item__title">Соцсети</h2>
+          <p class="contacts-item__text">Мы в Telegram: @decota_shop — новые коллекции и подборки образов</p>
+        </li>
+      </ul>
+      <form class="order-form contacts-form" id="contacts-form">
+        <h2 class="order-steps__title">Оставить телефон</h2>
+        <div class="order-form__group">
+          <label class="order-form__label" for="contacts-name">Имя</label>
+          <input class="order-form__input" id="contacts-name" name="name" type="text" required>
+        </div>
+        <div class="order-form__group">
+          <label class="order-form__label" for="contacts-phone">Телефон</label>
+          <input class="order-form__input" id="contacts-phone" name="phone" type="tel" required>
+        </div>
+        <button class="btn" type="submit">Перезвоните мне</button>
+        <p class="order-form__message" id="contacts-message" hidden>Спасибо! Перезвоним в течение дня.</p>
+      </form>
+    </div>
+    <h2 class="section__title">Частые вопросы</h2>
+    <div class="faq">
+      <details class="faq__item"><summary class="faq__question">Как подобрать размер?</summary><p class="faq__answer">Большинство моделей — свободный силуэт оверсайз. Если сомневаетесь между двумя размерами, напишите нам параметры, подскажем посадку.</p></details>
+      <details class="faq__item"><summary class="faq__question">Из чего связаны свитеры и кардиганы?</summary><p class="faq__answer">В составах — шерсть альпаки, хлопок и вискоза. Полный состав указан в описании каждой модели и на бирке изделия.</p></details>
+      <details class="faq__item"><summary class="faq__question">Как ухаживать за вязаными вещами?</summary><p class="faq__answer">Деликатная стирка при 30°, сушка на горизонтальной поверхности, хранение в сложенном виде — так вещь сохранит форму.</p></details>
+      <details class="faq__item"><summary class="faq__question">Сколько идёт доставка?</summary><p class="faq__answer">Отправляем в день подтверждения заказа, по России — от 2 до 5 дней.</p></details>
+      <details class="faq__item"><summary class="faq__question">Можно ли вернуть товар?</summary><p class="faq__answer">Да, возврат в течение 14 дней, если сохранены бирки и товарный вид.</p></details>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__logo">DECOTA</p>
+      <p class="site-footer__note">Магазин женской одежды: свитеры, кардиганы, платья, юбки и топы.<br>
+      Тел.: +7 (900) 000-00-00 · info@decota-shop.ru</p>
+      <p class="site-footer__copy">© 2026 DECOTA · учебный проект по дисциплине «Фронтенд и бэкенд разработка»</p>
+    </div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Наверх">↑</button>
+  <dialog class="order-dialog" id="order-dialog">
+    <div class="order-dialog__inner">
+      <h2 class="order-dialog__title">Быстрый заказ</h2>
+      <p class="order-dialog__product" id="order-dialog-product"></p>
+      <form class="order-dialog__form" id="order-dialog-form">
+        <div class="order-form__group">
+          <label class="order-form__label" for="dialog-name">Имя</label>
+          <input class="order-form__input" id="dialog-name" name="name" type="text" required>
+        </div>
+        <div class="order-form__group">
+          <label class="order-form__label" for="dialog-phone">Телефон</label>
+          <input class="order-form__input" id="dialog-phone" name="phone" type="tel" required>
+        </div>
+        <button class="btn order-dialog__submit" type="submit">Отправить заявку</button>
+        <p class="order-dialog__message" id="order-dialog-message" hidden>Спасибо! Мы перезвоним вам в течение дня.</p>
+      </form>
+      <button class="order-dialog__close" type="button" id="order-dialog-close" aria-label="Закрыть">✕</button>
+    </div>
+  </dialog>
+  <script src="js/main.js"></script>
+</body>
+</html>
