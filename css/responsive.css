@@ -1,0 +1,258 @@
+/*
+  Адаптивные стили для контрольной работы №3.
+  Подход: Mobile First.
+  Базовые стили рассчитаны на мобильный экран.
+  Расширения добавляются через min-width медиазапросы.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container,
+.main,
+.section {
+  width: min(100% - 32px, 1160px);
+  margin-inline: auto;
+}
+
+/* ---------- шапка: на мобильном без прилипания, меню в колонку ---------- */
+
+.site-header {
+  position: static;
+}
+
+.site-header__inner {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-nav__list {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs, 8px);
+  width: 100%;
+}
+
+.site-nav__link {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+/* ---------- hero: одна колонка ---------- */
+
+.hero__inner {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero__title {
+  font-size: clamp(28px, 7vw, 46px);
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+/* ---------- категории ---------- */
+
+.categories-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.category-card__name {
+  font-size: 17px;
+  bottom: calc(var(--space-sm) + 20px);
+}
+
+/* ---------- сетка карточек: 1 -> 2 -> 3 -> 4 ---------- */
+
+.products-grid {
+  grid-template-columns: 1fr;
+}
+
+.product-card {
+  min-width: 0;
+}
+
+.product-card__title,
+.product-card__description {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- каталог: фильтр сверху, потом товары ---------- */
+
+.catalog-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.catalog-filters {
+  position: static;
+  order: -1;
+}
+
+.catalog-grid {
+  grid-template-columns: 1fr;
+}
+
+/* ---------- страница товара ---------- */
+
+.product-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.product-info__title {
+  font-size: clamp(26px, 6vw, 32px);
+}
+
+.product-gallery__thumbs {
+  flex-wrap: wrap;
+}
+
+/* ---------- преимущества и CTA ---------- */
+
+.advantages-grid {
+  grid-template-columns: 1fr;
+}
+
+.cta {
+  padding: var(--space-lg) var(--space-md);
+}
+
+/* ---------- формы: одна колонка ---------- */
+
+.order-layout,
+.contacts-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* ---------- кнопка «наверх» ---------- */
+
+.back-to-top {
+  right: 16px;
+  bottom: 16px;
+}
+
+/* ================= ПЛАНШЕТ ================= */
+
+@media (min-width: 640px) {
+  .products-grid,
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .advantages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  /* шапка возвращается на место и прилипает */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .site-header__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    gap: var(--space-md, 16px);
+  }
+
+  .site-nav__link {
+    width: auto;
+    padding: 8px 12px;
+  }
+
+  .order-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .order-form__group--wide {
+    grid-column: 1 / -1;
+  }
+
+  .back-to-top {
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 900px) {
+  .hero__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .advantages-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* каталог становится двухколоночным, фильтр прилипает сбоку */
+  .catalog-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .catalog-filters {
+    position: sticky;
+    top: 88px;
+    order: initial;
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .product-layout {
+    grid-template-columns: minmax(280px, 460px) minmax(0, 1fr);
+  }
+
+  .order-layout,
+  .contacts-grid {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
