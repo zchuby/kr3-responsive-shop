@@ -6,6 +6,7 @@
   <title>DECOTA — магазин женской одежды</title>
   <meta name="description" content="Свитеры, кардиганы, платья, юбки и топы DECOTA: собственное производство и натуральные материалы.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body class="page">
   <header class="site-header">
@@ -29,7 +30,11 @@
         <a class="btn btn--ghost" href="order.html">Как заказать</a>
       </div>
     </div>
-    <img class="hero__image" src="images/hero-desktop.webp" alt="Молочный пушистый кардиган DECOTA" width="900" height="1200">
+    <picture>
+  <source media="(min-width: 1200px)" srcset="images/hero-desktop.webp">
+  <source media="(min-width: 768px)" srcset="images/hero-tablet.webp">
+  <img class="hero__image" src="images/hero-mobile.webp" alt="Молочный пушистый кардиган DECOTA" width="516" height="688">
+</picture>
   </div>
 </section>
 <section class="section" id="categories">
@@ -63,7 +68,7 @@
     <h2 class="section__title">Хиты продаж</h2>
     <div class="products-grid"><article class="product-card" data-cat="Свитеры" data-price="3049.92" data-disc="1">
   <span class="product-card__badge">Хит</span>
-  <img src="images/1287420220-516.webp" alt="Свитер вязаный на одно плечо оверсайз, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <img src="images/1287420220-516.webp" srcset="images/1287420220-246.webp 246w, images/1287420220-516.webp 516w, images/1287420220-900.webp 900w" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 280px" alt="Свитер вязаный на одно плечо оверсайз, молочный" width="516" height="688" loading="lazy" class="product-card__image">
   <div class="product-card__body">
     <span class="product-card__category">Свитеры</span>
     <h3 class="product-card__title">Свитер вязаный на одно плечо оверсайз, молочный</h3>
@@ -75,7 +80,7 @@
   </div>
 </article><article class="product-card" data-cat="Кардиганы" data-price="4659.6" data-disc="1">
   <span class="product-card__badge">Хит</span>
-  <img src="images/1579501326-516.webp" alt="Кардиган пушистый на пуговицах, молочный" width="516" height="688" loading="lazy" class="product-card__image">
+  <img src="images/1579501326-516.webp" srcset="images/1579501326-246.webp 246w, images/1579501326-516.webp 516w, images/1579501326-900.webp 900w" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 280px" alt="Кардиган пушистый на пуговицах, молочный" width="516" height="688" loading="lazy" class="product-card__image">
   <div class="product-card__body">
     <span class="product-card__category">Кардиганы</span>
     <h3 class="product-card__title">Кардиган пушистый на пуговицах, молочный</h3>
