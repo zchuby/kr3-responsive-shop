@@ -2,16 +2,16 @@
    Адаптивные переопределения вынесены в responsive.css. */
 
 :root {
-  --color-bg: #0a0a0c;
-  --color-bg-2: #121215;
+  --color-bg: #0d090b;
+  --color-bg-2: #161014;
   --color-surface: rgb(255 255 255 / 0.04);
   --color-ink: #eef1f6;
   --color-muted: #8b93a7;
-  --color-accent: #ff2e3f;        /* неоновый красный */
-  --color-accent-ink: #0b0b0e;    /* текст на красном */
-  --color-accent-soft: rgb(255 46 63 / 0.14);
+  --color-accent: #c22a52;        /* винный бордо */
+  --color-accent-ink: #fff4f6;    /* кремовый текст на бордо */
+  --color-accent-soft: rgb(194 42 82 / 0.14);
   --color-line: rgb(255 255 255 / 0.1);
-  --color-line-strong: rgb(255 46 63 / 0.55);
+  --color-line-strong: rgb(194 42 82 / 0.55);
   --color-badge: #ffffff;         /* белый контур + красное свечение */
   --radius: 14px;
   --space-xs: 8px;
@@ -20,7 +20,7 @@
   --space-lg: 24px;
   --space-xl: 40px;
   --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
-  --glow: 0 0 24px rgb(255 46 63 / 0.35);
+  --glow: 0 0 24px rgb(194 42 82 / 0.35);
 }
 
 * {
@@ -39,8 +39,8 @@ body {
   line-height: 1.6;
   color: var(--color-ink);
   background:
-    radial-gradient(900px 480px at 85% -10%, rgb(255 46 63 / 0.09), transparent 60%),
-    radial-gradient(700px 420px at -10% 30%, rgb(255 46 63 / 0.08), transparent 60%),
+    radial-gradient(900px 480px at 85% -10%, rgb(194 42 82 / 0.09), transparent 60%),
+    radial-gradient(700px 420px at -10% 30%, rgb(194 42 82 / 0.08), transparent 60%),
     var(--color-bg);
   background-attachment: fixed;
 }
@@ -70,7 +70,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgb(10 10 12 / 0.78);
+  background: rgb(13 9 11 / 0.78);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-line);
@@ -91,7 +91,7 @@ img {
   letter-spacing: 0.18em;
   color: var(--color-ink);
   text-decoration: none;
-  text-shadow: 0 0 18px rgb(255 46 63 / 0.45);
+  text-shadow: 0 0 18px rgb(194 42 82 / 0.45);
 }
 
 .site-header__logo-cursor {
@@ -131,7 +131,7 @@ img {
 
 .site-nav__link--active {
   color: var(--color-accent);
-  text-shadow: 0 0 12px rgb(255 46 63 / 0.6);
+  text-shadow: 0 0 12px rgb(194 42 82 / 0.6);
   box-shadow: inset 0 -2px 0 var(--color-accent);
 }
 
@@ -177,7 +177,7 @@ img {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-accent);
-  box-shadow: 0 0 18px rgb(255 46 63 / 0.18);
+  box-shadow: 0 0 18px rgb(194 42 82 / 0.18);
 }
 
 .hero__title {
@@ -212,8 +212,8 @@ img {
   border-radius: var(--radius);
   border: 1px solid var(--color-line-strong);
   box-shadow:
-    0 0 0 6px rgb(255 46 63 / 0.06),
-    0 0 44px rgb(255 46 63 / 0.22),
+    0 0 0 6px rgb(194 42 82 / 0.06),
+    0 0 44px rgb(194 42 82 / 0.22),
     0 24px 60px rgb(0 0 0 / 0.55);
 }
 
@@ -267,7 +267,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgb(8 8 10 / 0.92));
+  background: linear-gradient(180deg, transparent 40%, rgb(10 6 8 / 0.92));
 }
 
 .category-card:hover {
@@ -370,7 +370,7 @@ img {
   font-size: 17px;
   font-weight: 700;
   color: var(--color-accent);
-  text-shadow: 0 0 14px rgb(255 46 63 / 0.35);
+  text-shadow: 0 0 14px rgb(194 42 82 / 0.35);
 }
 
 .product-card__old-price {
@@ -386,13 +386,13 @@ img {
   padding: 3px 10px;
   border-radius: 999px;
   border: 1px solid var(--color-badge);
-  background: rgb(8 8 10 / 0.82);
+  background: rgb(10 6 8 / 0.82);
   color: var(--color-badge);
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  box-shadow: 0 0 16px rgb(255 46 63 / 0.45);
+  box-shadow: 0 0 16px rgb(194 42 82 / 0.45);
 }
 
 .product-card__button {
@@ -440,7 +440,7 @@ img {
   border-radius: var(--radius);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
-  box-shadow: 0 0 40px rgb(255 46 63 / 0.12);
+  box-shadow: 0 0 40px rgb(194 42 82 / 0.12);
 }
 
 .cta__title {
@@ -569,7 +569,7 @@ img {
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--color-line-strong);
-  box-shadow: 0 0 36px rgb(255 46 63 / 0.16);
+  box-shadow: 0 0 36px rgb(194 42 82 / 0.16);
 }
 
 .product-gallery__image {
@@ -671,7 +671,7 @@ img {
 }
 
 .product-table th {
-  background: rgb(255 46 63 / 0.07);
+  background: rgb(194 42 82 / 0.07);
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.1em;
@@ -731,7 +731,7 @@ img {
 .order-form__textarea:focus,
 .order-form__select:focus {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgb(255 46 63 / 0.15);
+  box-shadow: 0 0 0 3px rgb(194 42 82 / 0.15);
 }
 
 .order-form__input::placeholder,
@@ -875,7 +875,7 @@ img {
 .btn:hover,
 .btn:focus-visible {
   background: var(--color-accent);
-  box-shadow: var(--glow), 0 0 40px rgb(255 46 63 / 0.45);
+  box-shadow: var(--glow), 0 0 40px rgb(194 42 82 / 0.45);
   color: var(--color-accent-ink);
 }
 
@@ -899,7 +899,7 @@ img {
   padding: 0;
   background: var(--color-bg-2);
   color: var(--color-ink);
-  box-shadow: 0 0 60px rgb(255 46 63 / 0.2), 0 30px 80px rgb(0 0 0 / 0.6);
+  box-shadow: 0 0 60px rgb(194 42 82 / 0.2), 0 30px 80px rgb(0 0 0 / 0.6);
 }
 
 .order-dialog::backdrop {
@@ -1007,7 +1007,7 @@ img {
   font-size: 20px;
   letter-spacing: 0.18em;
   color: var(--color-ink);
-  text-shadow: 0 0 16px rgb(255 46 63 / 0.4);
+  text-shadow: 0 0 16px rgb(194 42 82 / 0.4);
 }
 
 .site-footer__note {
